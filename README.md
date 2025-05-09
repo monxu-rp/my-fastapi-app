@@ -21,26 +21,53 @@ The main goal of this project is to enhance skills in Python development while a
 
 ## Installation
 
+
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/username/project.git
    ```
 
-2. Install dependencies:
+1. Create a virtual environment (optional but recommended):
 
     ```bash
-    pip install -r requirements.txt
-   ```
+    python -m venv .venv
+    ```
 
-3. Run the application:
+   1. On Windows, use this command to activate the virtual environment:
+
+       ```bash
+       .\.venv\Scripts\activate
+       ```
+   1. On macOS/Linux, use this command to activate:
+
+       ```bash
+       source .venv/bin/activate
+       ```
+
+1. Install dependencies:
+   1. For production:
+       ```bash
+       pip install -r requirements.txt
+       ```
+   1. For development:
+      ```bash
+      pip install -r dev-requirements.txt
+      ```
+1. Run the application:
 
     ```bash
     uvicorn app.main:app --reload
     ```
 
-4. Run the tests:
+1. Run the tests:
 
     ```bash
     pytest
+    ```
+
+1. To destroy the virtual environment, use this command:
+
+    ```bash
+    deactivate
     ```
