@@ -1,0 +1,4 @@
+[run]
+omit =
+    app/domain/ports/*
+    config/config.py
