@@ -65,7 +65,7 @@ The main goal of this project is to enhance skills in Python development while a
 1. Run the tests:
 
    ```bash
-   pytest
+   PYTHONPATH=$(pwd) pytest
    ```
 1. Run the tests with coverage:
 
