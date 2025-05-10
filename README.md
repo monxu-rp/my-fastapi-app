@@ -18,6 +18,8 @@ The main goal of this project is to enhance skills in Python development while a
 - FastAPI
 - Uvicorn
 - pytest
+- httpx (for integration tests)
+- coverage (for test coverage reports)
 
 ## Installation
 
@@ -30,9 +32,9 @@ The main goal of this project is to enhance skills in Python development while a
 
 1. Create a virtual environment (optional but recommended):
 
-    ```bash
+   ```bash
     python -m venv .venv
-    ```
+   ```
 
    1. On Windows, use this command to activate the virtual environment:
 
@@ -56,15 +58,22 @@ The main goal of this project is to enhance skills in Python development while a
       ```
 1. Run the application:
 
-    ```bash
+   ```bash
     uvicorn app.main:app --reload
-    ```
+   ```
 
 1. Run the tests:
 
-    ```bash
-    pytest
-    ```
+   ```bash
+   pytest
+   ```
+1. Run the tests with coverage:
+
+   ```bash
+   coverage run -m pytest
+   coverage report
+   coverage html  # Genera un informe visual en htmlcov/index.html
+   ```
 
 1. To destroy the virtual environment, use this command:
 
