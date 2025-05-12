@@ -72,7 +72,7 @@ The main goal of this project is to enhance skills in Python development while a
    ```bash
    coverage run -m pytest
    coverage report
-   coverage html  # Genera un informe visual en htmlcov/index.html
+   coverage html
    ```
 
 1. To destroy the virtual environment, use this command:
